@@ -16,7 +16,7 @@ class Config:
     DEVICE_TIMEOUT = int(os.getenv('DEVICE_TIMEOUT', '5'))
     
     # Target Server Configuration
-    TARGET_SERVER_URL = os.getenv('TARGET_SERVER_URL', 'https://panel.sdadparts.com/api/device/import')
+    TARGET_SERVER_URL = os.getenv('TARGET_SERVER_URL', 'hhttps://panel.sdadparts.com/api/attendance/device-import')
     TARGET_SERVER_TOKEN = os.getenv('TARGET_SERVER_TOKEN', '3|4GQYfJgpAhjlZfumsMMBrKvZyr68L9hVA3V9u5Fnd983ce66')
     
     # Sync Configuration
