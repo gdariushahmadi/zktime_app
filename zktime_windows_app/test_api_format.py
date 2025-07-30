@@ -19,45 +19,39 @@ def create_test_data():
     test_attendance = [
         {
             'user_id': '12345',
-            'name': 'John Doe',
             'timestamp': '2024-01-01 08:00:00',
             'status': 'Check In',
-            'verification': 'Fingerprint'
+            'punch': 1
         },
         {
             'user_id': '12345',
-            'name': 'John Doe',
             'timestamp': '2024-01-01 12:00:00',
             'status': 'Check Out',
-            'verification': 'Fingerprint'
+            'punch': 2
         },
         {
             'user_id': '12345',
-            'name': 'John Doe',
             'timestamp': '2024-01-01 13:00:00',
             'status': 'Check In',
-            'verification': 'Fingerprint'
+            'punch': 3
         },
         {
             'user_id': '12345',
-            'name': 'John Doe',
             'timestamp': '2024-01-01 17:00:00',
             'status': 'Check Out',
-            'verification': 'Fingerprint'
+            'punch': 4
         },
         {
             'user_id': '67890',
-            'name': 'Jane Smith',
             'timestamp': '2024-01-01 09:00:00',
             'status': 'Check In',
-            'verification': 'Fingerprint'
+            'punch': 1
         },
         {
             'user_id': '67890',
-            'name': 'Jane Smith',
             'timestamp': '2024-01-01 18:00:00',
             'status': 'Check Out',
-            'verification': 'Fingerprint'
+            'punch': 2
         }
     ]
     
@@ -82,8 +76,8 @@ def test_api_format():
             'connection_status': True
         },
         'users': [
-            {'user_id': '12345', 'name': 'John Doe'},
-            {'user_id': '67890', 'name': 'Jane Smith'}
+            {'user_id': '12345', 'name': 'John Doe', 'card': '0', 'privilege': 0},
+            {'user_id': '67890', 'name': 'Jane Smith', 'card': '0', 'privilege': 0}
         ],
         'attendance': create_test_data(),
         'sync_info': {

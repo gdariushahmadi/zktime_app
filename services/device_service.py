@@ -88,8 +88,14 @@ class DeviceService:
             Formatted data for server in the required API format
         """
         try:
-            # Get attendance records from device data
+            # Get attendance records and users from device data
             attendance_records = device_data.get('attendance', [])
+            users_list = device_data.get('users', [])
+            
+            # Create user lookup dictionary for names
+            user_lookup = {}
+            for user in users_list:
+                user_lookup[user.get('user_id', '')] = user.get('name', 'Unknown User')
             
             # Group attendance records by date and user
             attendance_by_date_user = {}
@@ -102,9 +108,11 @@ class DeviceService:
                     try:
                         timestamp = datetime.fromisoformat(record['timestamp'].replace('Z', '+00:00'))
                         date_str = timestamp.strftime('%Y-%m-%d')
-                        time_str = timestamp.strftime('%H:%M')
+                        time_str = timestamp.strftime('%H:%M:%S')  # Changed to H:i:s format
                         user_id = record.get('user_id', 'unknown')
-                        user_name = record.get('name', 'Unknown User')
+                        
+                        # Get user name from lookup or use user_id as fallback
+                        user_name = user_lookup.get(user_id, f"User {user_id}")
                         
                         if date_str not in attendance_by_date_user:
                             attendance_by_date_user[date_str] = {}
