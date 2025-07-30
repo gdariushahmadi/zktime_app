@@ -22,8 +22,7 @@ import winreg
 import schedule
 from zk import ZK
 
-# Add parent directory to path for imports
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Import zk_device_info from local directory
 from zk_device_info import connect_to_device
 
 class SimpleZKTimeApp:

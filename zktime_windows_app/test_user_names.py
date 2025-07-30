@@ -7,8 +7,7 @@ Test script to verify user name extraction using zk_device_info
 import sys
 import os
 
-# Add parent directory to path for imports
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Import zk_device_info from local directory
 from zk_device_info import connect_to_device
 
 def test_user_names():
