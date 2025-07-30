@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Simple ZKTeco Device Sync Application
+Simple ZKTeco Device Sync Application (BETA SERVER VERSION)
 No web interface, just system tray and sync functionality
+Uses BETA server for testing: https://beta.sdadparts.com/api/attendance/device-import
 """
 
 import sys
@@ -26,8 +27,8 @@ from zk import ZK
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from zk_device_info import connect_to_device
 
-class SimpleZKTimeApp:
-    """Simple ZKTeco sync application with only essential features"""
+class SimpleZKTimeAppBeta:
+    """Simple ZKTeco sync application with BETA server for testing"""
     
     def __init__(self):
         """Initialize the application"""
@@ -35,9 +36,9 @@ class SimpleZKTimeApp:
         self.DEVICE_IP = '192.168.70.141'
         self.DEVICE_PORT = 4370
         self.DEVICE_TIMEOUT = 5
-        self.SERVER_URL = 'https://panel.sdadparts.com/api/attendance/device-import'
+        self.SERVER_URL = 'https://beta.sdadparts.com/api/attendance/device-import'  # BETA SERVER
         self.SERVER_TOKEN = '3|4GQYfJgpAhjlZfumsMMBrKvZyr68L9hVA3V9u5Fnd983ce66'
-        self.SYNC_INTERVAL = 3600  # 1 hour
+        self.SYNC_INTERVAL = 300  # 5 minutes for testing
         
         # Application state
         self.sync_running = False
@@ -52,7 +53,7 @@ class SimpleZKTimeApp:
         
     def setup_logging(self):
         """Setup simple logging"""
-        log_file = 'zktime_simple.log'
+        log_file = 'zktime_beta_test.log'
         logging.basicConfig(
             level=logging.INFO,
             format='%(asctime)s - %(levelname)s - %(message)s',
@@ -62,16 +63,17 @@ class SimpleZKTimeApp:
             ]
         )
         self.logger = logging.getLogger(__name__)
-        self.logger.info("Simple ZKTime App started")
+        self.logger.info("Simple ZKTime App BETA started")
+        self.logger.info(f"Using BETA server: {self.SERVER_URL}")
         
     def create_icon_image(self):
-        """Create a simple blue icon"""
+        """Create a simple beta icon (orange instead of blue)"""
         image = Image.new('RGBA', (64, 64), (0, 0, 0, 0))
         draw = ImageDraw.Draw(image)
-        # Blue circle
-        draw.ellipse([8, 8, 56, 56], fill=(0, 120, 255, 255))
-        # White "Z"
-        draw.text((24, 20), "Z", fill=(255, 255, 255, 255))
+        # Orange circle for beta
+        draw.ellipse([8, 8, 56, 56], fill=(255, 140, 0, 255))
+        # White "B" for Beta
+        draw.text((22, 20), "B", fill=(255, 255, 255, 255))
         return image
         
     def create_system_tray(self):
@@ -80,17 +82,18 @@ class SimpleZKTimeApp:
             icon_image = self.create_icon_image()
             
             menu = pystray.Menu(
-                pystray.MenuItem("Manual Sync", self.manual_sync),
+                pystray.MenuItem("Manual Sync (BETA)", self.manual_sync),
+                pystray.MenuItem("Test User List", self.test_user_list),
                 pystray.MenuItem("Device Status", self.show_device_status),
                 pystray.MenuItem("Start Auto Sync", self.start_auto_sync),
                 pystray.MenuItem("Stop Auto Sync", self.stop_auto_sync),
-                pystray.MenuItem("Settings", self.show_settings),
+                pystray.MenuItem("Settings (BETA)", self.show_settings),
                 pystray.MenuItem("View Log", self.view_log),
                 pystray.MenuItem("Exit", self.exit_app)
             )
             
-            self.icon = pystray.Icon("zktime_simple", icon_image, "ZKTime Simple Sync", menu)
-            self.logger.info("System tray created successfully")
+            self.icon = pystray.Icon("zktime_beta", icon_image, "ZKTime BETA Test", menu)
+            self.logger.info("System tray created successfully (BETA version)")
             
         except Exception as e:
             self.logger.error(f"Failed to create system tray: {e}")
@@ -107,13 +110,15 @@ class SimpleZKTimeApp:
             return None
             
     def get_users_from_device(self, conn):
-        """Get users from device"""
+        """Get users from device using the recommended method"""
         try:
             users = conn.get_users()
             user_dict = {}
             for user in users:
                 user_dict[user.user_id] = user.name
-            self.logger.info(f"Retrieved {len(user_dict)} users from device")
+            self.logger.info(f"Retrieved {len(user_dict)} users from device:")
+            for user_id, name in user_dict.items():
+                self.logger.info(f"  - {user_id}: {name}")
             return user_dict
         except Exception as e:
             self.logger.error(f"Failed to get users: {e}")
@@ -189,7 +194,8 @@ class SimpleZKTimeApp:
                 'attendance_records': attendance_records_api
             }
             
-            self.logger.info(f"Formatted {len(attendance_records_api)} records for API")
+            self.logger.info(f"Formatted {len(attendance_records_api)} records for BETA API")
+            self.logger.info(f"Sample formatted data: {json.dumps(api_data, indent=2, ensure_ascii=False)[:500]}...")
             return api_data
             
         except Exception as e:
@@ -197,13 +203,16 @@ class SimpleZKTimeApp:
             return None
             
     def send_to_server(self, data):
-        """Send data to server"""
+        """Send data to BETA server"""
         try:
             headers = {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
                 'Authorization': f'Bearer {self.SERVER_TOKEN}'
             }
+            
+            self.logger.info(f"Sending data to BETA server: {self.SERVER_URL}")
+            self.logger.info(f"Data size: {len(json.dumps(data))} characters")
             
             response = requests.post(
                 self.SERVER_URL,
@@ -212,21 +221,24 @@ class SimpleZKTimeApp:
                 timeout=30
             )
             
+            self.logger.info(f"Server response status: {response.status_code}")
+            self.logger.info(f"Server response: {response.text}")
+            
             if response.status_code == 200:
-                self.logger.info("Data sent to server successfully")
+                self.logger.info("Data sent to BETA server successfully")
                 return True
             else:
-                self.logger.error(f"Server returned status {response.status_code}: {response.text}")
+                self.logger.error(f"BETA server returned status {response.status_code}: {response.text}")
                 return False
                 
         except Exception as e:
-            self.logger.error(f"Failed to send data to server: {e}")
+            self.logger.error(f"Failed to send data to BETA server: {e}")
             return False
             
     def perform_sync(self):
-        """Perform complete sync process"""
+        """Perform complete sync process with BETA server"""
         try:
-            self.logger.info("Starting sync process")
+            self.logger.info("Starting BETA sync process")
             
             # Connect to device
             conn = self.connect_to_device_local()
@@ -249,40 +261,67 @@ class SimpleZKTimeApp:
             if not api_data:
                 return False
                 
-            # Send to server
+            # Send to BETA server
             success = self.send_to_server(api_data)
             
             if success:
-                self.logger.info(f"Sync completed successfully. Sent {len(api_data['attendance_records'])} records")
+                self.logger.info(f"BETA sync completed successfully. Sent {len(api_data['attendance_records'])} records")
             else:
-                self.logger.error("Sync failed")
+                self.logger.error("BETA sync failed")
                 
             return success
             
         except Exception as e:
-            self.logger.error(f"Sync process failed: {e}")
+            self.logger.error(f"BETA sync process failed: {e}")
             return False
             
-    def manual_sync(self, icon=None, item=None):
-        """Perform manual sync"""
+    def test_user_list(self, icon=None, item=None):
+        """Test user list functionality"""
         try:
-            self.logger.info("Manual sync requested")
+            self.logger.info("Testing user list functionality")
+            
+            conn = self.connect_to_device_local()
+            if conn:
+                users = conn.get_users()
+                conn.disconnect()
+                
+                # Show users in messagebox
+                user_text = f"کاربران دستگاه ({len(users)} کاربر):\n\n"
+                for i, user in enumerate(users[:10], 1):  # Show first 10 users
+                    user_text += f"{i}. {user.name} (کد: {user.user_id})\n"
+                
+                if len(users) > 10:
+                    user_text += f"\n... و {len(users) - 10} کاربر دیگر"
+                
+                messagebox.showinfo("لیست کاربران", user_text)
+                self.logger.info(f"Displayed {len(users)} users to user")
+            else:
+                messagebox.showerror("خطا", "اتصال به دستگاه برقرار نشد")
+                
+        except Exception as e:
+            self.logger.error(f"Failed to test user list: {e}")
+            messagebox.showerror("خطا", f"خطا در دریافت لیست کاربران: {e}")
+            
+    def manual_sync(self, icon=None, item=None):
+        """Perform manual sync with BETA server"""
+        try:
+            self.logger.info("Manual BETA sync requested")
             
             # Run in background thread
             def sync_worker():
                 success = self.perform_sync()
                 if success:
-                    messagebox.showinfo("Sync", "Manual sync completed successfully!")
+                    messagebox.showinfo("Sync", "Manual BETA sync completed successfully!")
                 else:
-                    messagebox.showerror("Sync", "Manual sync failed. Check log for details.")
+                    messagebox.showerror("Sync", "Manual BETA sync failed. Check log for details.")
                     
             thread = threading.Thread(target=sync_worker)
             thread.daemon = True
             thread.start()
             
         except Exception as e:
-            self.logger.error(f"Manual sync failed: {e}")
-            messagebox.showerror("Error", f"Manual sync failed: {e}")
+            self.logger.error(f"Manual BETA sync failed: {e}")
+            messagebox.showerror("Error", f"Manual BETA sync failed: {e}")
             
     def show_device_status(self, icon=None, item=None):
         """Show device status"""
@@ -293,11 +332,12 @@ class SimpleZKTimeApp:
                 attendance = conn.get_attendance()
                 conn.disconnect()
                 
-                status_text = f"Device Status:\n\n"
+                status_text = f"Device Status (BETA):\n\n"
                 status_text += f"IP: {self.DEVICE_IP}:{self.DEVICE_PORT}\n"
                 status_text += f"Connection: ✓ Connected\n"
                 status_text += f"Users: {len(users)}\n"
-                status_text += f"Attendance Records: {len(attendance)}"
+                status_text += f"Attendance Records: {len(attendance)}\n"
+                status_text += f"Server: BETA ({self.SERVER_URL})"
                 
                 messagebox.showinfo("Device Status", status_text)
             else:
@@ -308,10 +348,10 @@ class SimpleZKTimeApp:
             messagebox.showerror("Error", f"Failed to get device status: {e}")
             
     def start_auto_sync(self, icon=None, item=None):
-        """Start automatic sync"""
+        """Start automatic sync with BETA server"""
         try:
             if self.sync_running:
-                messagebox.showinfo("Auto Sync", "Auto sync is already running")
+                messagebox.showinfo("Auto Sync", "BETA auto sync is already running")
                 return
                 
             self.sync_running = True
@@ -326,31 +366,31 @@ class SimpleZKTimeApp:
             self.sync_thread.daemon = True
             self.sync_thread.start()
             
-            self.logger.info(f"Auto sync started (interval: {self.SYNC_INTERVAL} seconds)")
-            messagebox.showinfo("Auto Sync", f"Auto sync started (every {self.SYNC_INTERVAL//60} minutes)")
+            self.logger.info(f"BETA auto sync started (interval: {self.SYNC_INTERVAL} seconds)")
+            messagebox.showinfo("Auto Sync", f"BETA auto sync started (every {self.SYNC_INTERVAL//60} minutes)")
             
         except Exception as e:
-            self.logger.error(f"Failed to start auto sync: {e}")
-            messagebox.showerror("Error", f"Failed to start auto sync: {e}")
+            self.logger.error(f"Failed to start BETA auto sync: {e}")
+            messagebox.showerror("Error", f"Failed to start BETA auto sync: {e}")
             
     def stop_auto_sync(self, icon=None, item=None):
         """Stop automatic sync"""
         try:
             self.sync_running = False
             schedule.clear()
-            self.logger.info("Auto sync stopped")
-            messagebox.showinfo("Auto Sync", "Auto sync stopped")
+            self.logger.info("BETA auto sync stopped")
+            messagebox.showinfo("Auto Sync", "BETA auto sync stopped")
             
         except Exception as e:
-            self.logger.error(f"Failed to stop auto sync: {e}")
-            messagebox.showerror("Error", f"Failed to stop auto sync: {e}")
+            self.logger.error(f"Failed to stop BETA auto sync: {e}")
+            messagebox.showerror("Error", f"Failed to stop BETA auto sync: {e}")
             
     def show_settings(self, icon=None, item=None):
         """Show settings"""
         try:
             root = tk.Tk()
-            root.title("ZKTime Simple - Settings")
-            root.geometry("400x300")
+            root.title("ZKTime BETA - Settings")
+            root.geometry("450x350")
             root.resizable(False, False)
             
             tk.Label(root, text="Device Settings", font=("Arial", 12, "bold")).pack(pady=10)
@@ -358,8 +398,9 @@ class SimpleZKTimeApp:
             tk.Label(root, text=f"Device Port: {self.DEVICE_PORT}").pack()
             tk.Label(root, text=f"Sync Interval: {self.SYNC_INTERVAL} seconds").pack()
             
-            tk.Label(root, text="\nServer Settings", font=("Arial", 12, "bold")).pack(pady=10)
-            tk.Label(root, text=f"Server URL: {self.SERVER_URL}").pack()
+            tk.Label(root, text="\nServer Settings (BETA)", font=("Arial", 12, "bold"), fg="orange").pack(pady=10)
+            tk.Label(root, text=f"Server URL: {self.SERVER_URL}", fg="orange").pack()
+            tk.Label(root, text="⚠️ This is BETA server for testing!", fg="red").pack()
             
             tk.Label(root, text="\nSync Status", font=("Arial", 12, "bold")).pack(pady=10)
             status = "Running" if self.sync_running else "Stopped"
@@ -375,7 +416,7 @@ class SimpleZKTimeApp:
     def view_log(self, icon=None, item=None):
         """View log file"""
         try:
-            log_file = 'zktime_simple.log'
+            log_file = 'zktime_beta_test.log'
             if os.path.exists(log_file):
                 os.startfile(log_file)
             else:
@@ -387,7 +428,7 @@ class SimpleZKTimeApp:
     def exit_app(self, icon=None, item=None):
         """Exit application"""
         try:
-            self.logger.info("Application exiting")
+            self.logger.info("BETA application exiting")
             self.sync_running = False
             if self.icon:
                 self.icon.stop()
@@ -399,10 +440,7 @@ class SimpleZKTimeApp:
     def run(self):
         """Run the application"""
         try:
-            self.logger.info("Starting Simple ZKTime App")
-            
-            # Start auto sync by default
-            self.start_auto_sync()
+            self.logger.info("Starting Simple ZKTime BETA App")
             
             # Run system tray
             if self.icon:
@@ -411,16 +449,16 @@ class SimpleZKTimeApp:
                 self.logger.error("System tray not available")
                 
         except Exception as e:
-            self.logger.error(f"Application error: {e}")
+            self.logger.error(f"BETA application error: {e}")
             sys.exit(1)
 
 def main():
     """Main entry point"""
     try:
-        app = SimpleZKTimeApp()
+        app = SimpleZKTimeAppBeta()
         app.run()
     except Exception as e:
-        print(f"Failed to start application: {e}")
+        print(f"Failed to start BETA application: {e}")
         sys.exit(1)
 
 if __name__ == "__main__":
