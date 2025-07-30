@@ -79,42 +79,114 @@ class DeviceService:
     
     def format_data_for_server(self, device_data: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Format device data for server transmission
+        Format device data for server transmission according to API specification
         
         Args:
             device_data: Raw device data
             
         Returns:
-            Formatted data for server
+            Formatted data for server in the required API format
         """
         try:
-            # Format data according to server requirements
-            formatted_data = {
-                'device_info': {
-                    'name': device_data['device_status']['device_info']['device_name'],
-                    'serial_number': device_data['device_status']['device_info']['serial_number'],
-                    'firmware_version': device_data['device_status']['device_info']['firmware_version'],
-                    'ip_address': device_data['device_status']['device_info']['ip_address'],
-                    'port': device_data['device_status']['device_info']['port'],
-                    'device_time': device_data['device_status']['device_info']['device_time'],
-                    'connection_status': device_data['device_status']['connection_status']
+            # Get attendance records from device data
+            attendance_records = device_data.get('attendance', [])
+            
+            # Group attendance records by date and user
+            attendance_by_date_user = {}
+            
+            for record in attendance_records:
+                # Extract date and user info from attendance record
+                # Assuming record structure: {'user_id': '12345', 'timestamp': '2024-01-01 08:00:00', ...}
+                if 'timestamp' in record:
+                    # Parse timestamp to get date and time
+                    try:
+                        timestamp = datetime.fromisoformat(record['timestamp'].replace('Z', '+00:00'))
+                        date_str = timestamp.strftime('%Y-%m-%d')
+                        time_str = timestamp.strftime('%H:%M')
+                        user_id = record.get('user_id', 'unknown')
+                        user_name = record.get('name', 'Unknown User')
+                        
+                        if date_str not in attendance_by_date_user:
+                            attendance_by_date_user[date_str] = {}
+                        
+                        if user_id not in attendance_by_date_user[date_str]:
+                            attendance_by_date_user[date_str][user_id] = {
+                                'date': date_str,
+                                'id_number': user_id,
+                                'name': user_name,
+                                'times': [],
+                                'card': '0',
+                                'attendance_details': []
+                            }
+                        
+                        # Add time to times array
+                        if time_str not in attendance_by_date_user[date_str][user_id]['times']:
+                            attendance_by_date_user[date_str][user_id]['times'].append(time_str)
+                        
+                        # Add detailed record
+                        detail_record = {
+                            'date': date_str,
+                            'id_number': user_id,
+                            'name': user_name,
+                            'time': time_str,
+                            'status': 'Check In' if len(attendance_by_date_user[date_str][user_id]['times']) % 2 == 1 else 'Check Out',
+                            'verification': 'Fingerprint'  # Default verification method
+                        }
+                        attendance_by_date_user[date_str][user_id]['attendance_details'].append(detail_record)
+                        
+                    except Exception as e:
+                        logger.warning(f"Error parsing attendance record: {e}")
+                        continue
+            
+            # Convert to the required API format
+            formatted_records = []
+            all_dates = sorted(attendance_by_date_user.keys())
+            
+            for date_str in all_dates:
+                for user_id, user_data in attendance_by_date_user[date_str].items():
+                    # Sort times chronologically
+                    user_data['times'].sort()
+                    
+                    # Create the record in API format
+                    record = {
+                        'date': user_data['date'],
+                        'id_number': user_data['id_number'],
+                        'name': user_data['name'],
+                        'times': user_data['times'],
+                        'card': user_data['card']
+                    }
+                    
+                    # Add daily details if there are multiple entries
+                    if len(user_data['attendance_details']) > 1:
+                        record['daily'] = {
+                            'date': user_data['date'],
+                            'user_id': user_data['id_number'],
+                            'attendance_details': user_data['attendance_details']
+                        }
+                    
+                    formatted_records.append(record)
+            
+            # Determine period dates
+            if all_dates:
+                start_date = min(all_dates)
+                end_date = max(all_dates)
+            else:
+                # If no attendance data, use current date
+                today = datetime.now().strftime('%Y-%m-%d')
+                start_date = today
+                end_date = today
+            
+            # Create the final API format
+            api_data = {
+                'period': {
+                    'start_date': start_date,
+                    'end_date': end_date
                 },
-                'users_summary': {
-                    'total_users': device_data['sync_info']['total_users'],
-                    'users_list': device_data['users']
-                },
-                'attendance_summary': {
-                    'total_records': device_data['sync_info']['total_attendance'],
-                    'recent_records': device_data['attendance'][-50:] if device_data['attendance'] else []  # Last 50 records
-                },
-                'sync_metadata': {
-                    'sync_timestamp': device_data['sync_info']['sync_timestamp'],
-                    'sync_status': device_data['sync_info']['sync_status'],
-                    'source_device': device_data['device_status']['device_info']['ip_address']
-                }
+                'attendance_records': formatted_records
             }
             
-            return formatted_data
+            logger.info(f"Formatted {len(formatted_records)} attendance records for API")
+            return api_data
             
         except Exception as e:
             logger.error(f"Error formatting data for server: {e}")
