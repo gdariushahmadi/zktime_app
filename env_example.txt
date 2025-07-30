@@ -1,0 +1,22 @@
+# Device Configuration
+DEVICE_IP=192.168.70.141
+DEVICE_PORT=4370
+DEVICE_TIMEOUT=5
+
+# Target Server Configuration
+TARGET_SERVER_URL=https://panel.sdadparts.com/api/device/import
+TARGET_SERVER_TOKEN=3|4GQYfJgpAhjlZfumsMMBrKvZyr68L9hVA3V9u5Fnd983ce66
+
+# Sync Configuration
+SYNC_INTERVAL=3600
+SYNC_START_TIME=00:00
+SYNC_END_TIME=23:59
+
+# Logging Configuration
+LOG_LEVEL=INFO
+LOG_FILE=device_sync.log
+
+# API Configuration
+API_TIMEOUT=30
+API_RETRY_ATTEMPTS=3
+API_RETRY_DELAY=5 

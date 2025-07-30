@@ -1,0 +1,1049 @@
+2025-07-30 05:29:35,078 - __main__ - INFO - Starting ZKTeco Device Information Web Interface
+2025-07-30 05:29:35,098 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.70.89:8080
+2025-07-30 05:29:35,098 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-30 05:31:03,990 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:31:03,991 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:04,597 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:04,598 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:04,611 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:04,611 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:05,128 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:05,215 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:31:05,215 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:05,230 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:05,230 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:05,743 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:05,792 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:31:05,793 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:05,805 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:05,805 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:06,323 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:08,720 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:31:08,720 - services.api_service - INFO - Device status retrieved: 0 users, 3182 attendance records
+2025-07-30 05:31:08,721 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:31:08,721 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:08,744 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:08,745 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:09,248 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:09,248 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:09,272 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:09,272 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:09,542 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:31:09,542 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:09,542 - services.api_service - ERROR - Error disconnecting from device: instance are not connected.
+2025-07-30 05:31:09,542 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:09,768 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:09,856 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:31:09,856 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:09,872 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:09,872 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:10,128 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:10,128 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:10,153 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:10,153 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:10,440 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:10,514 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:31:10,514 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:10,527 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:10,527 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:10,759 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:10,843 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:31:10,843 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:10,864 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:10,864 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:11,098 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:13,629 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:31:13,629 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:16,387 - services.api_service - ERROR - Error connecting to device 192.168.70.141:4370: timed out
+2025-07-30 05:31:16,387 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:16,620 - services.api_service - ERROR - Error getting attendance info after reconnection: timed out
+2025-07-30 05:31:16,620 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 0 attendance records
+2025-07-30 05:31:16,620 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:17,117 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:17,142 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:31:17,142 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:31:17,781 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:31:17,789 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:31:17] "GET / HTTP/1.1" 200 -
+2025-07-30 05:31:18,640 - services.api_service - ERROR - Error disconnecting from device: timed out
+2025-07-30 05:31:18,641 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:19,146 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:19,147 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:19,181 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:19,182 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:19,728 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:19,833 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:31:19,834 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:19,857 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:19,857 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:20,368 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:20,430 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:31:20,430 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:20,454 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:20,454 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:20,950 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:21,400 - services.api_service - ERROR - Error disconnecting from device: timed out
+2025-07-30 05:31:21,401 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:21,929 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:31:21,930 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:31:21,930 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:31:21,930 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:21,947 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:21,947 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:22,027 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:27,436 - services.api_service - ERROR - Error connecting to device 192.168.70.141:4370: timed out
+2025-07-30 05:31:27,436 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:27,655 - services.api_service - ERROR - Error getting attendance info after reconnection: timed out
+2025-07-30 05:31:27,655 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 0 attendance records
+2025-07-30 05:31:27,655 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:31:27,655 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:27,948 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:27,973 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:31:27,973 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:31:28,622 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:31:28,631 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:31:28] "GET / HTTP/1.1" 200 -
+2025-07-30 05:31:28,693 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:31:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-30 05:31:32,666 - services.api_service - ERROR - Error disconnecting from device: timed out
+2025-07-30 05:31:32,667 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:33,167 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:33,167 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:33,194 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:33,194 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:35,031 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:35,094 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:31:35,094 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:35,108 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:35,108 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:35,642 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:35,697 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:31:35,697 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:35,722 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:35,722 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:36,209 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:37,162 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:31:37,162 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:31:37,162 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:37,625 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:37,644 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:31:37,645 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:31:38,347 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:31:38,354 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:31:38] "GET / HTTP/1.1" 200 -
+2025-07-30 05:31:43,280 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:31:43,281 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:43,973 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:43,973 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:44,487 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:44,487 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:44,503 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:44,503 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:45,035 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:45,109 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:31:45,109 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:45,123 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:45,123 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:45,650 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:45,688 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:31:45,688 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:45,711 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:45,711 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:46,222 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:47,197 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:31:47,198 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:31:47,198 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:31:47] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:31:58,654 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:31:58,654 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:58,669 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:58,669 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:59,199 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:59,199 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:59,212 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:59,212 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:31:59,753 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:31:59,837 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:31:59,837 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:31:59,861 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:31:59,861 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:00,405 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:00,474 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:32:00,474 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:00,488 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:00,488 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:02,060 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:03,013 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:32:03,014 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:32:03,014 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:32:03] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:32:03,021 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:32:03,021 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:03,039 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:03,039 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:03,556 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:03,556 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:03,571 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:03,571 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:04,092 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:04,171 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:32:04,171 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:04,184 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:04,185 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:04,725 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:04,771 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:32:04,772 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:04,783 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:04,783 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:05,295 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:06,310 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:32:06,310 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:32:06,310 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:32:06,311 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:06,323 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:06,323 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:06,834 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:06,835 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:06,849 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:06,849 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:07,366 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:07,441 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:32:07,441 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:07,511 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:07,511 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:08,029 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:08,069 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:32:08,069 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:08,087 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:08,087 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:08,601 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:09,536 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:32:09,536 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:32:09,537 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:11,065 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:11,090 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:32:11,090 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:32:11,693 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:32:11,701 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:32:11] "GET / HTTP/1.1" 200 -
+2025-07-30 05:32:18,413 - controllers.device_controller - INFO - API: Syncing device data
+2025-07-30 05:32:18,413 - services.device_service - INFO - Starting device data sync
+2025-07-30 05:32:18,413 - services.device_service - INFO - Starting device data retrieval
+2025-07-30 05:32:18,413 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:18,435 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:18,435 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:20,076 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:20,076 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:20,098 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:20,099 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:20,626 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:20,697 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:32:20,697 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:20,729 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:20,729 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:21,240 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:21,280 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:32:21,280 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:21,294 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:21,294 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:21,812 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:22,790 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:32:22,791 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:32:22,791 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:22,808 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:22,808 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:23,340 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:23,391 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:32:23,391 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:23,407 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:23,407 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:23,967 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:24,913 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:32:24,913 - services.device_service - INFO - Device data retrieved successfully: 0 users, 3182 attendance records
+2025-07-30 05:32:24,914 - services.device_service - INFO - Sending data to server: https://panel.sdadparts.com/api/device/import
+2025-07-30 05:32:25,561 - services.device_service - WARNING - Server returned status 404: {
+    "message": "The route api/device/import could not be found."
+}
+2025-07-30 05:32:26,203 - services.device_service - WARNING - Server returned status 404: {
+    "message": "The route api/device/import could not be found."
+}
+2025-07-30 05:32:26,785 - services.device_service - WARNING - Server returned status 404: {
+    "message": "The route api/device/import could not be found."
+}
+2025-07-30 05:32:26,786 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:32:26] "[32mGET /sync HTTP/1.1[0m" 302 -
+2025-07-30 05:32:26,791 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:32:26,791 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:26,802 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:26,802 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:27,319 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:27,319 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:27,333 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:27,333 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:27,872 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:27,949 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:32:27,949 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:27,967 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:27,967 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:28,474 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:28,537 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:32:28,537 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:28,555 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:28,556 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:29,098 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:30,031 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:32:30,031 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:32:30,031 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:32:30,031 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:30,050 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:30,050 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:30,555 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:30,556 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:30,576 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:30,576 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:31,112 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:31,181 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:32:31,181 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:31,195 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:31,195 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:31,708 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:31,745 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:32:31,746 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:32:31,771 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:32:31,771 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:32,304 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:33,313 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:32:33,313 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:32:33,313 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:32:33,834 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:32:33,859 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:32:33,859 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:32:34,455 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:33:05,466 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:33:05,467 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:05,480 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:05,480 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:05,956 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:05,957 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:05,980 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:05,980 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:06,430 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:06,519 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:33:06,519 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:06,533 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:06,533 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:07,003 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:07,051 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:33:07,051 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:07,064 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:07,065 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:07,544 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:08,506 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:33:08,506 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:33:08,506 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:33:08] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:33:08,513 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:33:08,513 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:08,540 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:08,540 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:09,022 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:09,022 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:09,036 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:09,036 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:09,506 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:09,581 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:33:09,581 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:09,596 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:09,596 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:10,093 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:10,155 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:33:10,155 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:10,183 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:10,183 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:10,652 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:11,632 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:33:11,633 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:33:11,633 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:33:11,633 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:11,653 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:11,653 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:12,118 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:12,118 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:12,131 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:12,131 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:12,599 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:12,663 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:33:12,664 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:12,681 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:12,682 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:13,153 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:13,201 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:33:13,202 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:13,217 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:13,217 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:13,708 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:14,628 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:33:14,628 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:33:14,629 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:15,115 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:15,133 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:33:15,133 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:33:15,785 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:33:46,153 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:33:46,154 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:46,167 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:46,168 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:46,632 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:46,632 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:46,646 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:46,646 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:47,100 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:47,230 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:33:47,231 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:47,254 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:47,254 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:47,757 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:47,799 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:33:47,800 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:47,814 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:47,814 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:48,284 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:50,606 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:33:50,606 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:33:50,607 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:33:50] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:33:50,916 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:33:50,916 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:50,933 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:50,934 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:51,462 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:51,462 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:51,486 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:51,486 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:51,981 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:52,056 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:33:52,056 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:52,070 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:52,070 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:52,573 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:52,611 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:33:52,611 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:52,636 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:52,636 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:53,211 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:54,186 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:33:54,186 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:33:54,186 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:33:54,186 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:54,207 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:54,207 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:54,728 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:54,728 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:54,742 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:54,743 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:55,243 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:55,304 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:33:55,304 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:55,318 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:55,318 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:55,831 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:55,884 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:33:55,884 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:33:55,898 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:33:55,898 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:56,396 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:57,362 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:33:57,362 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:33:57,362 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:33:59,192 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:33:59,207 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:33:59,207 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:33:59,804 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:34:30,156 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:34:30,156 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:30,170 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:30,170 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:30,679 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:30,679 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:30,703 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:30,703 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:31,156 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:31,236 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:34:31,236 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:31,250 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:31,250 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:31,739 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:31,779 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:34:31,780 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:31,803 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:31,803 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:32,302 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:33,292 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:34:33,293 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:34:33,293 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:34:33] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:34:33,299 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:34:33,299 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:33,328 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:33,328 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:35,165 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:35,166 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:35,179 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:35,179 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:35,649 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:35,732 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:34:35,732 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:35,746 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:35,746 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:36,249 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:36,314 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:34:36,314 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:36,327 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:36,327 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:36,811 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:37,751 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:34:37,751 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:34:37,751 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:34:37,751 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:37,773 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:37,773 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:38,245 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:38,245 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:38,259 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:38,259 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:38,750 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:38,813 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:34:38,813 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:38,827 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:38,827 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:39,295 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:39,333 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:34:39,333 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:34:39,349 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:34:39,349 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:39,809 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:40,775 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:34:40,775 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:34:40,776 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:34:41,279 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:34:41,317 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:34:41,317 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:34:41,950 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:35:12,149 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:35:12,149 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:12,166 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:12,166 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:12,930 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:12,930 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:12,966 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:12,966 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:13,778 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:13,863 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:35:13,863 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:13,879 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:13,879 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:14,707 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:14,761 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:35:14,761 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:14,782 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:14,783 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:15,576 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:16,569 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:35:16,569 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:35:16,570 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:35:16] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:35:16,899 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:35:16,900 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:16,916 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:16,916 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:17,719 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:17,719 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:17,745 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:17,746 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:18,319 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:18,398 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:35:18,398 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:18,423 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:18,423 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:19,074 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:19,137 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:35:19,137 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:19,164 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:19,164 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:19,967 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:20,955 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:35:20,956 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:35:20,956 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:35:20,956 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:20,966 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:20,966 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:21,755 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:21,755 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:21,773 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:21,774 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:22,613 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:22,676 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:35:22,676 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:22,686 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:22,686 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:23,147 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:23,200 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:35:23,200 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:23,213 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:23,213 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:23,989 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:24,981 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:35:24,982 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:35:24,984 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:25,806 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:25,833 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:35:25,835 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:35:26,509 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:35:57,145 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:35:57,145 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:57,173 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:57,174 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:58,005 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:58,007 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:58,030 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:58,031 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:58,831 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:58,909 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:35:58,910 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:58,927 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:58,927 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:35:59,859 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:35:59,913 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:35:59,913 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:35:59,926 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:35:59,926 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:00,702 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:01,696 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:36:01,696 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:36:01,697 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:36:01] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:36:01,703 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:36:01,703 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:01,718 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:01,718 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:02,175 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:02,175 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:02,202 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:02,202 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:02,685 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:02,762 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:36:02,762 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:02,776 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:02,776 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:03,242 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:03,286 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:36:03,286 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:03,310 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:03,310 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:03,756 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:06,070 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:36:06,070 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:36:06,070 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:36:06,070 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:06,096 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:06,097 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:06,800 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:06,800 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:06,815 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:06,815 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:07,568 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:07,637 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:36:07,637 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:07,667 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:07,668 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:08,490 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:08,533 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:36:08,533 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:08,554 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:08,554 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:09,373 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:10,342 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:36:10,342 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:36:10,342 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:11,190 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:11,215 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:36:11,216 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:36:11,898 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:36:42,143 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:36:42,144 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:42,174 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:42,174 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:42,673 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:42,674 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:42,698 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:42,698 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:43,204 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:43,274 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:36:43,274 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:43,307 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:43,308 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:43,815 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:43,859 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:36:43,859 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:43,886 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:43,886 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:44,372 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:45,329 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:36:45,329 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:36:45,329 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:36:45] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:36:45,642 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:36:45,642 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:45,654 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:45,654 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:46,137 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:46,137 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:46,151 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:46,152 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:46,641 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:46,710 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:36:46,711 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:46,726 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:46,726 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:47,211 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:47,276 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:36:47,276 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:47,295 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:47,295 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:47,788 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:48,799 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:36:48,799 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:36:48,800 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:36:48,800 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:48,811 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:48,811 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:50,383 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:50,383 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:50,406 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:50,406 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:50,903 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:50,981 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:36:50,981 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:50,996 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:50,996 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:51,479 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:51,516 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:36:51,516 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:36:51,531 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:36:51,531 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:52,025 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:52,978 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:36:52,978 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:36:52,978 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:36:53,502 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:36:53,516 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:36:53,516 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:36:54,107 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:37:24,155 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:37:24,155 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:37:24,177 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:37:24,177 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:37:24,671 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:37:24,671 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:37:24,685 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:37:24,685 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:37:26,434 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:37:26,512 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:37:26,512 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:37:26,537 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:37:26,537 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:38:57,905 - __main__ - INFO - Starting ZKTeco Device Information Web Interface
+2025-07-30 05:38:57,906 - __main__ - INFO - Starting System Tray...
+2025-07-30 05:38:57,915 - __main__ - ERROR - Error in tray thread: tray_thread.<locals>.<lambda>() takes 0 positional arguments but 1 was given
+2025-07-30 05:38:58,906 - __main__ - INFO - System Tray started successfully
+2025-07-30 05:38:58,906 - __main__ - INFO - Starting web server on http://localhost:8080
+2025-07-30 05:38:58,928 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.70.89:8080
+2025-07-30 05:38:58,928 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-30 05:39:24,463 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:39:24,463 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:25,019 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:25,019 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:25,033 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:25,033 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:25,505 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:25,564 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:39:25,564 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:25,580 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:25,581 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:26,212 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:26,269 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:39:26,269 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:26,283 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:26,283 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:26,876 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:27,866 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:39:27,866 - services.api_service - INFO - Device status retrieved: 0 users, 3182 attendance records
+2025-07-30 05:39:27,867 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:39:27] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:39:27,876 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:39:27,876 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:27,900 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:27,900 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:28,396 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:28,396 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:28,417 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:28,417 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:28,955 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:29,018 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:39:29,018 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:29,042 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:29,042 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:29,516 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:29,577 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:39:29,577 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:29,600 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:29,600 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:30,078 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:30,202 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:39:30,202 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:30,340 - services.api_service - ERROR - Error getting attendance info after reconnection: [WinError 10038] An operation was attempted on something that is not a socket
+2025-07-30 05:39:30,340 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 0 attendance records
+2025-07-30 05:39:30,341 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:39:30,341 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:30,341 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:30,341 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:30,341 - services.api_service - ERROR - Error disconnecting from device: instance are not connected.
+2025-07-30 05:39:30,341 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:30,892 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:30,892 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:30,905 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:30,905 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:32,488 - services.api_service - ERROR - Error connecting to device 192.168.70.141:4370: <method 'connect_ex' of '_socket.socket' objects> returned a result with an exception set
+2025-07-30 05:39:32,489 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:32,548 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:32,548 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:32,574 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:32,574 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:33,066 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:33,080 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:39:33,080 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:39:33,387 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:33,483 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:39:33,483 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:33,497 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:33,498 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:33,734 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:39:34,026 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:34,085 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:39:34,085 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:34,102 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:34,102 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:34,791 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:35,749 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:39:35,749 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:39:35,749 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:39:35,749 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:35,769 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:35,769 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:36,264 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:36,264 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:36,278 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:36,278 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:36,796 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:36,880 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:39:36,881 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:36,894 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:36,895 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:37,498 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:37,566 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:39:37,567 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:37,585 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:37,585 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:38,114 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:39,064 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:39:39,065 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:39:39,065 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:39,823 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:39,847 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:39:39,847 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:39:40,483 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:39:43,410 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:39:43,410 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:43,427 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:43,427 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:43,946 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:43,946 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:43,970 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:43,970 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:44,473 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:44,551 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:39:44,551 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:44,565 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:44,565 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:45,066 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:45,131 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:39:45,131 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:45,145 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:45,145 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:45,662 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:46,591 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:39:46,591 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:39:46,591 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:39:46,591 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:46,608 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:46,608 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:47,126 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:47,126 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:47,151 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:47,152 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:47,650 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:47,727 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:39:47,727 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:47,741 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:47,741 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:48,250 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:48,287 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:39:48,287 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:48,302 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:48,302 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:48,819 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:51,206 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:39:51,206 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:39:51,206 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:51,696 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:51,712 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:39:51,712 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:39:52,366 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:39:52,372 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:39:52] "GET / HTTP/1.1" 200 -
+2025-07-30 05:39:57,201 - controllers.device_controller - INFO - API: Testing connections
+2025-07-30 05:39:57,201 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:39:57,754 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:39:57,782 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:39:57,782 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:39:58,396 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:39:58,398 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:39:58] "[32mGET /test HTTP/1.1[0m" 302 -
+2025-07-30 05:39:58,403 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:39:58,403 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:39:59,541 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:39:59,541 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:00,047 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:00,047 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:00,061 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:00,061 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:00,598 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:00,674 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:40:00,674 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:00,698 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:00,698 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:01,205 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:01,257 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:40:01,257 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:01,271 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:01,271 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:01,783 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:02,749 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:40:02,750 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:40:02,750 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:40:02,750 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:02,767 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:02,767 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:03,255 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:03,255 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:03,277 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:03,278 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:03,815 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:03,881 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:40:03,881 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:03,896 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:03,896 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:04,450 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:04,507 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:40:04,507 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:04,531 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:04,532 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:05,066 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:06,044 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:40:06,045 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:40:06,045 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:06,545 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:06,566 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:40:06,567 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:40:07,241 - services.device_service - INFO - Server connection test successful
+2025-07-30 05:40:13,789 - controllers.device_controller - INFO - API: Syncing device data
+2025-07-30 05:40:13,789 - services.device_service - INFO - Starting device data sync
+2025-07-30 05:40:13,789 - services.device_service - INFO - Starting device data retrieval
+2025-07-30 05:40:13,789 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:13,802 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:13,802 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:14,334 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:14,335 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:14,358 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:14,358 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:14,927 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:14,987 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:40:14,988 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:15,003 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:15,004 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:15,559 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:15,597 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:40:15,598 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:15,611 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:15,612 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:16,134 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:18,580 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:40:18,580 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:40:18,580 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:18,601 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:18,601 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:19,139 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:19,180 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:40:19,180 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:19,201 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:19,201 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:19,714 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:20,657 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:40:20,657 - services.device_service - INFO - Device data retrieved successfully: 0 users, 3182 attendance records
+2025-07-30 05:40:20,658 - services.device_service - INFO - Sending data to server: https://panel.sdadparts.com/api/device/import
+2025-07-30 05:40:21,357 - services.device_service - WARNING - Server returned status 404: {
+    "message": "The route api/device/import could not be found."
+}
+2025-07-30 05:40:21,998 - services.device_service - WARNING - Server returned status 404: {
+    "message": "The route api/device/import could not be found."
+}
+2025-07-30 05:40:22,652 - services.device_service - WARNING - Server returned status 404: {
+    "message": "The route api/device/import could not be found."
+}
+2025-07-30 05:40:22,653 - werkzeug - INFO - 127.0.0.1 - - [30/Jul/2025 05:40:22] "[32mGET /sync HTTP/1.1[0m" 302 -
+2025-07-30 05:40:22,656 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:40:22,656 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:22,677 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:22,677 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:23,218 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:23,219 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:23,232 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:23,233 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:23,809 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:23,895 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:40:23,895 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:23,919 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:23,919 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:24,458 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:24,510 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:40:24,511 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:24,526 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:24,527 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:25,044 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:27,336 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:40:27,336 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:40:27,336 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 05:40:27,336 - services.api_service - ERROR - Error getting device status: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:27,351 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:27,351 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:27,889 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:27,890 - services.api_service - ERROR - Error getting device info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:27,905 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:27,906 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:28,449 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:28,509 - services.api_service - INFO - Retrieved device info after reconnection: BioPro SA20
+2025-07-30 05:40:28,510 - services.api_service - ERROR - Error getting users info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:28,523 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:28,523 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:29,035 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:29,096 - services.api_service - ERROR - Error getting users info after reconnection: 'User' object has no attribute 'user_sns'
+2025-07-30 05:40:29,096 - services.api_service - ERROR - Error getting attendance info: 'ZK' object has no attribute 'is_enable'
+2025-07-30 05:40:29,109 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 05:40:29,109 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:29,626 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:30,601 - services.api_service - INFO - Retrieved 3182 attendance records after reconnection
+2025-07-30 05:40:30,601 - services.api_service - INFO - Device status retrieved after reconnection: 0 users, 3182 attendance records
+2025-07-30 05:40:30,602 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 05:40:31,266 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 05:40:31,296 - services.api_service - INFO - Connection test successful - Device: BioPro SA20
+2025-07-30 05:40:31,297 - services.device_service - INFO - Device connection test successful
+2025-07-30 05:40:31,901 - services.device_service - INFO - Server connection test successful

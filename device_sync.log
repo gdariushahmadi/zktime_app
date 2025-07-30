@@ -1,0 +1,184 @@
+2025-07-30 04:43:38,678 - __main__ - INFO - Starting ZKTeco Device Information Web Interface
+2025-07-30 04:43:38,692 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.70.89:8080
+2025-07-30 04:43:38,692 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-07-30 04:43:57,900 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:43:58,149 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 04:43:58,838 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 04:43:58,899 - services.api_service - INFO - Retrieved device info: BioPro SA20
+2025-07-30 04:43:58,962 - services.api_service - ERROR - Error getting users info: 'User' object has no attribute 'user_sns'
+2025-07-30 04:43:59,808 - services.api_service - INFO - Retrieved 3182 attendance records from device
+2025-07-30 04:43:59,809 - services.api_service - INFO - Device status retrieved: 0 users, 3182 attendance records
+2025-07-30 04:43:59,810 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 04:43:59,884 - services.api_service - INFO - Retrieved device info: BioPro SA20
+2025-07-30 04:43:59,931 - services.api_service - ERROR - Error getting users info: 'User' object has no attribute 'user_sns'
+2025-07-30 04:44:00,684 - services.api_service - INFO - Retrieved 3182 attendance records from device
+2025-07-30 04:44:00,684 - services.api_service - INFO - Device status retrieved: 0 users, 3182 attendance records
+2025-07-30 04:44:00,685 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 04:44:00,793 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 04:44:00,814 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 04:44:00,815 - services.device_service - INFO - Device connection test successful
+2025-07-30 04:44:01,467 - services.device_service - INFO - Server connection test successful
+2025-07-30 04:44:01,483 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:44:01] "GET / HTTP/1.1" 200 -
+2025-07-30 04:44:01,541 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:44:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-30 04:44:10,164 - controllers.device_controller - INFO - API: Testing connections
+2025-07-30 04:44:10,164 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 04:44:10,259 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 04:44:10,283 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 04:44:10,284 - services.device_service - INFO - Device connection test successful
+2025-07-30 04:44:10,889 - services.device_service - INFO - Server connection test successful
+2025-07-30 04:44:10,890 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:44:10] "[32mGET /test HTTP/1.1[0m" 302 -
+2025-07-30 04:44:10,893 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:44:10,893 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:10,893 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 04:44:10,894 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:10,894 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 04:44:10,980 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 04:44:11,007 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 04:44:11,008 - services.device_service - INFO - Device connection test successful
+2025-07-30 04:44:11,627 - services.device_service - INFO - Server connection test successful
+2025-07-30 04:44:17,723 - controllers.device_controller - INFO - API: Syncing device data
+2025-07-30 04:44:17,723 - services.device_service - INFO - Starting device data sync
+2025-07-30 04:44:17,724 - services.device_service - INFO - Starting device data retrieval
+2025-07-30 04:44:17,724 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:17,724 - services.device_service - ERROR - Failed to get device status
+2025-07-30 04:44:17,725 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:44:17] "[32mGET /sync HTTP/1.1[0m" 302 -
+2025-07-30 04:44:17,731 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:44:17,731 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:17,732 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 04:44:17,732 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:17,733 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 04:44:17,833 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 04:44:17,851 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 04:44:17,851 - services.device_service - INFO - Device connection test successful
+2025-07-30 04:44:18,478 - services.device_service - INFO - Server connection test successful
+2025-07-30 04:44:24,661 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:44:24,661 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:24,661 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:44:24] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:44:31,567 - controllers.device_controller - INFO - API: Syncing device data
+2025-07-30 04:44:31,567 - services.device_service - INFO - Starting device data sync
+2025-07-30 04:44:31,567 - services.device_service - INFO - Starting device data retrieval
+2025-07-30 04:44:31,567 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:31,567 - services.device_service - ERROR - Failed to get device status
+2025-07-30 04:44:31,568 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:44:31] "[32mGET /sync HTTP/1.1[0m" 302 -
+2025-07-30 04:44:31,575 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:44:31,575 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:31,575 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 04:44:31,575 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:31,576 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 04:44:31,696 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 04:44:31,709 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 04:44:31,711 - services.device_service - INFO - Device connection test successful
+2025-07-30 04:44:32,344 - services.device_service - INFO - Server connection test successful
+2025-07-30 04:44:44,416 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:44:44,416 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:44,419 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:44:44] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:44:45,372 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:44:45,372 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:45,373 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:44:45] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:44:49,141 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:44:49,142 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:49,142 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 04:44:49,142 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:49,142 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 04:44:49,249 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 04:44:49,263 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 04:44:49,263 - services.device_service - INFO - Device connection test successful
+2025-07-30 04:44:49,871 - services.device_service - INFO - Server connection test successful
+2025-07-30 04:44:49,882 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:44:49] "GET / HTTP/1.1" 200 -
+2025-07-30 04:44:57,866 - controllers.device_controller - INFO - API: Testing connections
+2025-07-30 04:44:57,866 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 04:44:57,966 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 04:44:57,991 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 04:44:57,991 - services.device_service - INFO - Device connection test successful
+2025-07-30 04:44:58,571 - services.device_service - INFO - Server connection test successful
+2025-07-30 04:44:58,572 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:44:58] "[32mGET /test HTTP/1.1[0m" 302 -
+2025-07-30 04:44:58,575 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:44:58,576 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:58,576 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 04:44:58,576 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:44:58,576 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 04:44:58,680 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 04:44:58,695 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 04:44:58,695 - services.device_service - INFO - Device connection test successful
+2025-07-30 04:44:59,327 - services.device_service - INFO - Server connection test successful
+2025-07-30 04:45:12,614 - controllers.device_controller - INFO - API: Syncing device data
+2025-07-30 04:45:12,614 - services.device_service - INFO - Starting device data sync
+2025-07-30 04:45:12,614 - services.device_service - INFO - Starting device data retrieval
+2025-07-30 04:45:12,614 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:45:12,614 - services.device_service - ERROR - Failed to get device status
+2025-07-30 04:45:12,615 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:45:12] "[32mGET /sync HTTP/1.1[0m" 302 -
+2025-07-30 04:45:12,620 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:45:12,621 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:45:12,621 - controllers.device_controller - INFO - API: Getting health status
+2025-07-30 04:45:12,621 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:45:12,621 - services.api_service - INFO - Attempting to connect to device 192.168.70.141:4370
+2025-07-30 04:45:12,727 - services.api_service - INFO - Successfully connected to device 192.168.70.141:4370
+2025-07-30 04:45:12,742 - services.api_service - INFO - Disconnected from device 192.168.70.141:4370
+2025-07-30 04:45:12,742 - services.device_service - INFO - Device connection test successful
+2025-07-30 04:45:13,378 - services.device_service - INFO - Server connection test successful
+2025-07-30 04:45:44,155 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:45:44,155 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:45:44,156 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:45:44] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:46:14,151 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:46:14,151 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:46:14,151 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:46:14] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:46:44,151 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:46:44,152 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:46:44,152 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:46:44] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:47:14,157 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:47:14,158 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:47:14,158 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:47:14] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:47:44,152 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:47:44,152 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:47:44,153 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:47:44] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:48:14,154 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:48:14,155 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:48:14,156 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:48:14] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:48:44,151 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:48:44,151 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:48:44,151 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:48:44] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:49:45,159 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:49:45,159 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:49:45,160 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:49:45] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:50:46,149 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:50:46,149 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:50:46,150 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:50:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:51:46,165 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:51:46,165 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:51:46,166 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:51:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:52:46,151 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:52:46,151 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:52:46,152 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:52:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:53:46,147 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:53:46,148 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:53:46,148 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:53:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:54:46,159 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:54:46,159 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:54:46,160 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:54:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:55:46,152 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:55:46,152 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:55:46,153 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:55:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:56:46,153 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:56:46,153 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:56:46,153 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:56:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:57:46,151 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:57:46,151 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:57:46,152 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:57:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:58:46,160 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:58:46,161 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:58:46,161 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:58:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 04:59:46,151 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 04:59:46,152 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 04:59:46,153 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 04:59:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:00:46,154 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:00:46,154 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 05:00:46,155 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 05:00:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:01:46,163 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:01:46,164 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 05:01:46,165 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 05:01:46] "GET /status HTTP/1.1" 200 -
+2025-07-30 05:02:46,160 - controllers.device_controller - INFO - API: Getting device status
+2025-07-30 05:02:46,161 - services.api_service - ERROR - Error getting device info: instance are not connected.
+2025-07-30 05:02:46,162 - werkzeug - INFO - 192.168.70.89 - - [30/Jul/2025 05:02:46] "GET /status HTTP/1.1" 200 -
