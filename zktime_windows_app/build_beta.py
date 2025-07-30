@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Simple build script for ZKTime Simple App
+BETA build script for ZKTime BETA App
 """
 
 import os
@@ -9,16 +9,16 @@ import sys
 import subprocess
 from pathlib import Path
 
-def build_simple_app():
-    """Build the simple ZKTime app"""
-    print("Building Simple ZKTime App...")
+def build_beta_app():
+    """Build the BETA ZKTime app"""
+    print("Building ZKTime BETA App...")
     
-    # PyInstaller command for simple app
+    # PyInstaller command for BETA app
     cmd = [
         sys.executable, "-m", "PyInstaller",
         "--onefile",                    # Single executable file
         "--windowed",                   # No console window
-        "--name=ZKTimeSimple",          # Executable name
+        "--name=ZKTimeBeta",            # Executable name
         "--hidden-import=requests",     # HTTP requests
         "--hidden-import=urllib3",      # HTTP client
         "--hidden-import=charset_normalizer",  # Character encoding
@@ -40,13 +40,13 @@ def build_simple_app():
         "--hidden-import=datetime",     # Date/time
         "--hidden-import=time",         # Time functions
         "--add-data=zk_device_info.py;.",  # Include zk_device_info module
-        "simple_zktime_app.py"
+        "simple_zktime_app_beta.py"
     ]
     
     try:
         subprocess.check_call(cmd)
-        print("✅ Simple app built successfully!")
-        print("📁 Executable: dist/ZKTimeSimple.exe")
+        print("✅ BETA app built successfully!")
+        print("📁 Executable: dist/ZKTimeBeta.exe")
         return True
     except subprocess.CalledProcessError as e:
         print(f"❌ Build failed: {e}")
@@ -54,12 +54,17 @@ def build_simple_app():
 
 def main():
     """Main build process"""
-    print("🔨 ZKTime Simple App Builder")
+    print("🧪 ZKTime BETA App Builder")
     print("=" * 40)
     
     # Check if source file exists
-    if not Path("simple_zktime_app.py").exists():
-        print("❌ Error: simple_zktime_app.py not found")
+    if not Path("simple_zktime_app_beta.py").exists():
+        print("❌ Error: simple_zktime_app_beta.py not found")
+        return False
+    
+    # Check if zk_device_info.py exists
+    if not Path("zk_device_info.py").exists():
+        print("❌ Error: zk_device_info.py not found")
         return False
     
     # Install requirements first
@@ -73,26 +78,32 @@ def main():
         return False
     
     # Build the app
-    success = build_simple_app()
+    success = build_beta_app()
     
     if success:
-        print("\n🎉 Build completed successfully!")
-        print("📁 Location: dist/ZKTimeSimple.exe")
-        print("🚀 Ready to run on Windows!")
-        print("\nFeatures:")
+        print("\n🎉 BETA build completed successfully!")
+        print("📁 Location: dist/ZKTimeBeta.exe")
+        print("🚀 Ready to test on Windows!")
+        print("\nBETA Features:")
+        print("  🧪 BETA server: beta.sdadparts.com")
+        print("  🟠 Orange icon with 'B'")
+        print("  ⏱️  5-minute sync interval")
+        print("  📋 Test User List menu")
+        print("  📄 Enhanced logging")
         print("  ✅ System Tray icon")
         print("  ✅ Manual sync")
-        print("  ✅ Auto sync (every hour)")
+        print("  ✅ Auto sync")
         print("  ✅ Device status")
         print("  ✅ Settings view")
         print("  ✅ Log viewer")
         print("  ✅ No console window")
         print("  ✅ No web interface")
+        print("\n⚠️  This is a BETA version for testing!")
     else:
-        print("\n❌ Build failed!")
+        print("\n❌ BETA build failed!")
     
     return success
 
 if __name__ == "__main__":
     success = main()
-    sys.exit(0 if success else 1)
+    sys.exit(0 if success else 1) 
